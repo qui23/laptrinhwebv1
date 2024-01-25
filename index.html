@@ -1,0 +1,2119 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetStore</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Content/css/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+<body>
+    <div class="header">
+
+        <div class="navbar">
+            <div class="navbar__left">
+                <a class="navbar__logo" href="/">
+                    <img src="/Content/images/logo.jpg" alt="">
+                </a>
+
+                <div class="navbar__menu">
+                    <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
+                    <ul class="navmenu">
+                        <li><a href="/">Trang chủ</a></li>
+
+                        <li><a href="/SanPham/TatCaSanPham">Sản phẩm</a></li>
+                        <li><a href="/Dichvu">Dịch vụ</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="navbar__center">
+
+                <form method="get" class="navbar__search" id="formSearch" action="/SanPham/Search">
+                    <input class="search" id="message" name="search" placeholder="Nhập để tìm kiếm" type="text" value="">
+                    <i class="fa fa-search" id="searchBtn" type="submit"></i>
+                </form>
+            </div>
+
+            <div class="navbar__right">
+                <div style="display: flex; align-items: center;">
+                    <div class="login" id="loginClick">
+                        <div class="login">
+                            <a href="/Security/SignIn"><i class="fa fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="navbar__shoppingCart getstarted scrollto active" style="font-weight:bold; text-decoration:none" href="/cart">
+                    <img src="/Content/images/shopping-cart.svg" style="width: 24px;" alt="">
+
+
+                    <span>0</span>
+
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="go-to-top"><i class="fas fa-chevron-up"></i></div>
+
+
+
+    <div class="post-slider">
+        <i class="fa fa-chevron-left prev" aria-hidden="true"></i>
+        <i class="fa fa-chevron-right next" aria-hidden="true"></i>
+
+        <div class="post-wrapper">
+            <div class="post">
+                <img src="/Content/images/BG-1.jpg" alt="">
+            </div>
+            <div class="post">
+                <img src="/Content/images/BG-2.jpg" alt="">
+            </div>
+            <div class="post">
+                <img src="/Content/images/BG-3.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sản phẩm nổi bật -->
+    <div class="body">
+
+        <div class="body__mainTitle">
+            <h2>Sản phẩm nổi bật</h2>
+        </div>
+
+        <div class="post-slider2">
+            <i class="fa fa-chevron-left prev2" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right next2" aria-hidden="true"></i>
+
+            <div class="row">
+                <div class="post-wrapper2">
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/1">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/dochocho.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 1
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            100,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/2">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/camcho.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 2
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            95,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/3">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/thucan.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 3
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            75,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/4">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/keocho.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 4
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            105,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/5">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/gangtaycho.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 1
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            45,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/6">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/vongdeo.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 2
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            55,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/7">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/batan.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        V&#x1EAD;t d&#x1EE5;ng cho ch&#xF3; lo&#x1EA1;i 1
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            65,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/8">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/dohop.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 1
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            20,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/9">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/dohop2.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 2
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            23,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2_5 col-md-4 col-6 post2">
+                        <a href="/SanPham/Details/10">
+                            <div class="product">
+                                <div class="product__img">
+                                    <img src="/Content/uploads/tuingumeo.jpg" alt="">
+                                </div>
+                                <div class="product__sale">
+                                    <h4>Mới</h4>
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__title">
+                                        Ph&#x1EE5; ki&#x1EC7;n cho m&#xE8;o lo&#x1EA1;i 1
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product__pride-newPride">
+                                    <span class="Price">
+                                        <bdi>
+                                            67,000
+                                            <span class="currencySymbol">₫</span>
+                                        </bdi>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="body__mainTitle">
+            <h2>Dịch vụ của chúng tôi</h2>
+        </div>
+
+        <div class="banner-top banner-top-2 row">
+            <div class="col-md-3 col-sm-6 mb-5">
+                <a href="/Dichvu" class="banner-top-2-child" style="background-color: #5BAB7B;">
+                    <div class="text-white">Pet Store thú cưng</div>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-5">
+                <a href="/Dichvu" class="banner-top-2-child" style="background-color: #5C9CCA;">
+                    <div class="text-white" style="margin: 0 auto;">Pet Hotel khách sạn cho thú cưng</div>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-5">
+                <a href="/Dichvu" class="banner-top-2-child" style="background-color: #C67B36;">
+                    <div class="text-white" style="margin: 0 auto;">Pet Grooming spa dành cho thú cưng</div>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-5">
+                <a href="/Dichvu" class="banner-top-2-child" style="background-color: #AB5D58;">
+                    <div class="text-white">Sản phẩm độc quyền</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tất cả sản phẩm -->
+    <div class="body">
+        <div class="body__mainTitle" style="display: flex; justify-content: space-between;">
+            <h2>TẤT CẢ SẢN PHẨM</h2>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/1">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dochocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        100,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/2">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/camcho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        95,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/3">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/thucan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 3
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        75,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/4">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/keocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 4
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        105,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/5">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/gangtaycho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        45,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/6">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vongdeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        55,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/7">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/batan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        65,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/8">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        20,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/9">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop2.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        23,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/10">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/tuingumeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        67,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/11">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vatdungmeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        50,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/12">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dochocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        100,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <center style="margin-top: 30px;">
+                <a class="btn text-white" style="background: crimson;" href="/SanPham/TatCaSanPham">Xem thêm</a>
+            </center>
+
+        </div>
+
+    </div>
+    <!-- End Tất cả sản phẩm -->
+    <!-- Sản phẩm cho chó -->
+    <div class="body">
+
+        <div class="body__mainTitle d-flex align-items-center">
+            <h2>Sản phẩm dành cho chó</h2>
+
+            <div class="d-flex justify-content-center align-items-center ml-5" style="font-size: 26px;">
+                <div id="fordog" class="text-secondary activeColor mr-3">Đồ ăn</div>
+                <div id="fordog2" class="text-secondary mr-3">Phụ kiện</div>
+                <div id="fordog3" class="text-secondary">Vật dụng</div>
+            </div>
+        </div>
+
+        <div class="dogfood active">
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/1">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dochocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        100,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/2">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/camcho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        95,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/3">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/thucan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 3
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        75,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/4">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/keocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 4
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        105,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/12">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dochocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        100,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/13">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/camcho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        95,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/14">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/thucan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 3
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        75,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/15">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/keocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 4
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        105,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/23">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dochocho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        100,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/24">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/camcho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; &#x103;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        95,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dogstyle">
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/5">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/gangtaycho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        45,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/6">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vongdeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        55,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/16">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/gangtaycho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        45,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/17">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vongdeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        55,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/27">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/gangtaycho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        45,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/28">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vongdeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        55,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/39">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/gangtaycho.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        45,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/40">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vongdeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho ch&#xF3; lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        55,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dogequi">
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/7">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/batan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        65,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/18">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/batan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        65,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/29">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/batan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        65,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/41">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/batan.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho ch&#xF3; lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        65,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-top">
+            <img src="/Content/images/BG-2.jpg" />
+        </div>
+    </div>
+
+    <!-- Sản phẩm cho mèo -->
+    <div class="body">
+
+        <div class="body__mainTitle d-flex align-items-center">
+            <h2>Sản phẩm dành cho mèo</h2>
+            <div class="d-flex justify-content-center align-items-center ml-5" style="font-size: 26px;">
+                <div id="forcat" class="text-secondary activeColor mr-3">Đồ ăn</div>
+                <div id="forcat2" class="text-secondary mr-3">Phụ kiện</div>
+                <div id="forcat3" class="text-secondary">Vật dụng</div>
+            </div>
+        </div>
+
+        <div class="catfood active">
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/8">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        20,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/9">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop2.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        23,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/19">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        20,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/20">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop2.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        23,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/30">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        20,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/31">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop2.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        23,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/42">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        20,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/43">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/dohop2.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    &#x110;&#x1ED3; h&#x1ED9;p &#x103;n cho m&#xE8;o lo&#x1EA1;i 2
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        23,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="catstyle">
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/10">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/tuingumeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        67,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/21">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/tuingumeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        67,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/32">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/tuingumeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        67,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/44">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/tuingumeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    Ph&#x1EE5; ki&#x1EC7;n cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        67,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="catequi">
+            <div class="row">
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/11">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vatdungmeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        50,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/22">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vatdungmeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        50,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/33">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vatdungmeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        50,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/34">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vatdungmeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        50,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2_5 col-md-4 col-6 post2">
+                    <a href="/SanPham/Details/45">
+                        <div class="product">
+                            <div class="product__img">
+                                <img src="/Content/uploads/vatdungmeo.jpg" alt="">
+                            </div>
+                            <div class="product__sale">
+                                <h4>Mới</h4>
+                            </div>
+                            <div class="product__content">
+                                <div class="product__title">
+                                    V&#x1EAD;t d&#x1EE5;ng cho m&#xE8;o lo&#x1EA1;i 1
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        50,000
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+
+        <div class="row banner-top">
+            <img class="col-md-4 col-sm-6" src="/Content/images/bg1.jpg" />
+            <img class="col-md-4 col-sm-6" src="/Content/images/bg2.jpg" />
+            <img class="col-md-4 col-sm-6" src="/Content/images/bnn.jpg" />
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__title">
+                <span>Liên hệ</span>
+                <div class="footer__social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info">
+
+            <div class="footer__info-content">
+                <h3>Giới thiệu</h3>
+                <p>Website quản lý, mua bán thú cưng</p>
+            </div>
+
+
+
+            <div class="footer__info-content">
+                <h3>Liên hệ</h3>
+                <p>Địa chỉ: số 5 phố Xốm - Đồng lãm - Hà tây - Hà Nội</p>
+                <p>Email: abc@gmail.com</p>
+                <p>Sđt: 0866372912 </p>
+            </div>
+
+            <div class="footer__info-content">
+                <h3>Fanpage</h3>
+                <img width="315" src="/Content/images/page.PNG" />
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+            <center> Design by: Petstore</center>
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Content/scripts/script.js?v=cIxXEh3BrAdqIRigX3MyzZsoYrbnBsZJhHvwNeleWbY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <!-- Visual Studio Browser Link -->
+    <script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="2d41040c340f4a039ee72f7a4572f1d2" data-requestMappingFromServer="false" data-connectUrl="http://localhost:62757/3b71204f903844f0897f58a0d7a82ea1/browserLink"></script>
+    <!-- End Browser Link -->
+
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+</body>
+</html>

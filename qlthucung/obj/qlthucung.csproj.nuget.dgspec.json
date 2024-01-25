@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asp.net\\asp.net\\asp.net\\qlthucung\\qlthucung\\qlthucung\\qlthucung.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\petstore\\qlthucung\\qlthucung.csproj": {}
   },
   "projects": {
-    "D:\\asp.net\\asp.net\\asp.net\\qlthucung\\qlthucung\\qlthucung\\qlthucung.csproj": {
+    "C:\\Users\\Admin\\Desktop\\petstore\\qlthucung\\qlthucung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asp.net\\asp.net\\asp.net\\qlthucung\\qlthucung\\qlthucung\\qlthucung.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\petstore\\qlthucung\\qlthucung.csproj",
         "projectName": "qlthucung",
-        "projectPath": "D:\\asp.net\\asp.net\\asp.net\\qlthucung\\qlthucung\\qlthucung\\qlthucung.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\petstore\\qlthucung\\qlthucung.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\asp.net\\asp.net\\asp.net\\qlthucung\\qlthucung\\qlthucung\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\petstore\\qlthucung\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
